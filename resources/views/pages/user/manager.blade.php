@@ -4,7 +4,9 @@
             <h1 class="h3 mb-0 text-gray-800">Users</h1>
         </div>
         <div class="row">
-            <livewire:user-list />
+            <div class="col-12">
+                <livewire:user-list />
+            </div>
         </div>
     </div>
 </x-app-layout>
