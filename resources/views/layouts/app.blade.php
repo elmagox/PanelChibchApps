@@ -27,6 +27,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link src="{{ mix('css/app.css') }}" rel="stylesheet">
 
 </head>
 
@@ -116,6 +117,7 @@
      <!-- Scripts -->
      <script src="{{ mix('js/app.js') }}" defer></script>
     @livewireScripts
+    @stack('scripts')
 </body>
 
 </html>
