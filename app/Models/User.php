@@ -27,6 +27,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_active',
+        'role_id',
     ];
 
     /**
@@ -58,4 +60,9 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function setPassword($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
 }
